@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
   var close = document.querySelector('.close');
   var submit = document.querySelector('.submit');
   var input = document.querySelectorAll('input');
+  var user = document.querySelector('#user');
 
   signIn.addEventListener('click', function(event) {
 
@@ -23,6 +24,16 @@ document.addEventListener('DOMContentLoaded', function(event) {
     input.forEach(function(input) {
 
       input.classList.add('error');
+
+    });
+
+  });
+
+  user.addEventListener('click', function(event) {
+
+    input.forEach(function(input) {
+
+      input.classList.remove('error');
 
     });
 
